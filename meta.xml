@@ -1,0 +1,34 @@
+<meta>
+    <info name='Sistema de Inventário' author='Hayees' version='1.0'/>
+
+    <!-- Config -->
+    <script type='shared' src='config.lua'/>
+
+    <!-- Modules -->
+    <script type='client' src='source/modules/client/framework.lua'/>
+    <script type='client' src='source/modules/client/assets.lua'/>
+    <script type='client' src='source/modules/client/mouse.lua'/>
+
+    <script type='shared' src='source/modules/shared/*.lua'/>
+
+    <script type='server' src='source/modules/server/*.lua'/>
+
+    <!-- Views -->
+    <script type='client' src='source/views/client/*.lua'/>
+
+    <!-- Controllers -->
+    <script type='client' src='source/controllers/client/*.lua'/>
+    <script type='server' src='source/controllers/server/*.lua'/>
+
+    <!-- Exports -->
+    <export function='giveItem' type='server'/>
+    <export function='removeItem' type='server'/>
+    <export function='getItemAmount' type='server'/>
+    <export function='hasItem' type='server'/>
+
+    <!-- Fonts -->
+    <file src='assets/fonts/*.ttf'/>
+
+    <!-- Images -->
+    <file src='assets/**/*.png'/>
+</meta>
